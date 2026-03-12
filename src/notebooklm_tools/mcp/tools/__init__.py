@@ -47,20 +47,20 @@ from .notes import note
 from .server import server_info
 from .batch import (
     batch_query,
-    batch_source_add,
-    batch_studio_create,
-    batch_notebook_list,
-    batch_notebook_delete,
+    batch_add_source,
+    batch_create,
+    batch_delete,
+    batch_studio,
 )
 from .cross_notebook import cross_notebook_query
 from .pipeline import pipeline_run, pipeline_list
 from .smart_select import (
-    smart_select_tag_add,
-    smart_select_tag_remove,
-    smart_select_tag_list,
-    smart_select_query,
+    tag_add,
+    tag_remove,
+    tag_list,
+    smart_select,
 )
-from .studio_advanced import studio_create_advanced
+from .studio_advanced import studio_list_types
 
 __all__ = [
     # Downloads (1 consolidated)
@@ -107,20 +107,20 @@ __all__ = [
     "server_info",
     # Batch (5)
     "batch_query",
-    "batch_source_add",
-    "batch_studio_create",
-    "batch_notebook_list",
-    "batch_notebook_delete",
+    "batch_add_source",
+    "batch_create",
+    "batch_delete",
+    "batch_studio",
     # Cross-notebook (1)
     "cross_notebook_query",
     # Pipeline (2)
     "pipeline_run",
     "pipeline_list",
     # Smart select (4)
-    "smart_select_tag_add",
-    "smart_select_tag_remove",
-    "smart_select_tag_list",
-    "smart_select_query",
+    "tag_add",
+    "tag_remove",
+    "tag_list",
+    "smart_select",
     # Studio advanced (1)
-    "studio_create_advanced",
+    "studio_list_types",
 ]
