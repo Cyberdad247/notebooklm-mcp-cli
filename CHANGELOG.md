@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Security
+- **Restrict `auth.json` file permissions (PR #116)** — Auth token cache files are now written with `chmod 600` (owner read/write only), preventing other local users or processes from reading active session cookies. Thanks to **@tody-agent** for the security audit!
+
 ## [0.5.11] - 2026-03-27
 
 ### Added
